@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Store Play</title>
+		<link href="./css/index.css" rel="stylesheet" type="text/css" />
+		<link rel="icon" href="img/my.ico" type="image/x-icon" />
+		<link rel="shortcut icon" href="img/my.ico" type="image/x-icon" />
+		<link rel="bookmark" href="img/my.ico" type="image/x-icon" />
+	</head>
+	<body>
+		<div id="top">
+			<div id="top_left">
+				<a href="index.html">
+				Store Play
+				</a>
+			</div>
+			<div id="search">
+				<input type="text" id="input_pid" placeholder="输入pid查找销售数据" maxlength="4" autocomplete="off" onkeypress="EnterPress(event)" onkeydown="EnterPress()">
+				<button id="button_press" type="button" name="button" onclick="submit();"></button>
+			</div>
+			<div id="user_icon"><img src="img/user_icon.jpg"></div>
+			<div id="username">admin</div>
+		</div>
+		<div id="second_bar">
+			<div id="hover_target">
+				<a href="index.html">商品</a>
+			</div>
+			<div id="focus">		
+				<span>排序</span>
+				<span>|</span>				
+				<a name="rate" id="default_rate" href="javascript:;" onclick="defaultSales();">默认</a>						
+				<a name="rate" href="javascript:;" onclick="mostSales();">排行榜</a>				
+				<a name="rate" href="javascript:;" onclick="newestSales();">新上架</a>				
+			</div>
+		</div>
+		<div id="left_nav">
+			<ul>
+			<li><a name="employees" href="javascript:;" onclick="showTable(this);">员工信息</a></li>
+			<li><a name="customers" href="javascript:;" onclick="showTable(this);">消费者信息</a></li>
+			<li><a name="products" href="javascript:;" onclick="showTable(this);">商品信息</a></li>
+			<li><a name="suppliers" href="javascript:;" onclick="showTable(this);">供应商信息</a></li>
+			<li><a name="purchases" href="javascript:;" onclick="showTable(this);">销售历史</a></li>
+			<li><a name="logs" href="javascript:;" onclick="showTable(this);">日志记录</a></li>
+			</ul>
+		</div>
+		<div id="center"></div>
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+		<script src="./js/global.js"></script>	
+	</body>
+</html>

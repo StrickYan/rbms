@@ -1,6 +1,6 @@
 <?php
 	include("conn.php");
-	$pid=$_GET[pid];
+	$pid=$_GET['pid'];
 	$query="call show_product('$pid');";
 	$result=$db->query($query);
 	$number_results=$result->num_rows;

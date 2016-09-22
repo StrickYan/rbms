@@ -1,6 +1,6 @@
 <?php
 	include("conn.php");
-	$table=$_GET[table];
+	$table=$_GET['table'];
 	//echo $table;
 	$query="call show_table('$table');";
 	$result=$db->query($query);

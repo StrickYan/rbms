@@ -1,10 +1,10 @@
 <?php
 	include("conn.php");
-	$pur=$_GET[pur];
-	$cid=$_GET[cid];
-	$eid=$_GET[eid];
-	$pid=$_GET[pid];
-	$qty=$_GET[qty];
+	$pur=$_GET['pur'];
+	$cid=$_GET['cid'];
+	$eid=$_GET['eid'];
+	$pid=$_GET['pid'];
+	$qty=$_GET['qty'];
 
 	$query="call add_purchase('$pur','$cid','$eid','$pid',$qty,@message,@price);";
 	$db->query($query);

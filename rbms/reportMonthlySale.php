@@ -1,6 +1,6 @@
 <?php
 	include("conn.php");
-	$pid=htmlspecialchars($_GET[pid]);
+	$pid=htmlspecialchars($_GET['pid']);
 	//echo $pid;
 	$query="call report_monthly_sale('$pid');";
 	$result=$db->query($query);

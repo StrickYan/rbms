@@ -1,9 +1,9 @@
 <?php
 	include("conn.php");
-	$sid=$_GET[sid];
-	$sname=$_GET[sname];
-	$city=$_GET[city];
-	$phone=$_GET[phone];
+	$sid=$_GET['sid'];
+	$sname=$_GET['sname'];
+	$city=$_GET['city'];
+	$phone=$_GET['phone'];
 
 	$query="call add_suppliers('$sid','$sname','$city','$phone',@message);";
 

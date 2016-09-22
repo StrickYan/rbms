@@ -1,8 +1,8 @@
 <?php
 	include("conn.php");
-	$eid=$_GET[eid];
-	$ename=$_GET[ename];
-	$city=$_GET[city];
+	$eid=$_GET['eid'];
+	$ename=$_GET['ename'];
+	$city=$_GET['city'];
 
 	$query="call add_employees('$eid','$ename','$city',@message);";
 

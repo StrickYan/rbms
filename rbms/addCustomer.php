@@ -1,8 +1,8 @@
 <?php
 	include("conn.php");
-	$cid=$_GET[cid];
-	$cname=$_GET[cname];
-	$city=$_GET[city];
+	$cid=$_GET['cid'];
+	$cname=$_GET['cname'];
+	$city=$_GET['city'];
 
 	$query="call add_customers('$cid','$cname','$city',@message);";
 

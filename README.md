@@ -7,4 +7,4 @@
 4. 在浏览器输入http://localhost/rbms/index.html即可访问主页面。
 
 #效果图：
-![](https://raw.githubusercontent.com/sk1275330626/rbms/rbms/img/example.png)  
+![](https://raw.githubusercontent.com/sk1275330626/rbms/master/rbms/img/example.png)  
